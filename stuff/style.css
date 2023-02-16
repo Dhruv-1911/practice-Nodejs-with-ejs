@@ -1,0 +1,38 @@
+body{
+    background-color: skyblue;
+    padding: 50px;
+}
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+#uid{
+    color: rgb(120, 43, 43);
+}
+p{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: rgba(72, 72, 169, 0.851);
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:transparent;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  li a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color:green;
+  }

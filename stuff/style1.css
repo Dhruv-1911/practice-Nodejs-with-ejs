@@ -1,0 +1,70 @@
+
+body{
+    background-color: skyblue;
+    padding: 50px;
+}
+
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+p{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: red;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:transparent;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  li a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color:green;
+  }
+
+form{
+    margin:0 40vw;
+    width: 87vh;
+    padding: 21px;
+}
+
+#fname, #lname,#email{
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: auto;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   justify-content: center;
+  }
+
+ #submit{
+    background-color: #4CAF50;
+    color: white;
+    width: auto;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #45a049;
+  }
+  

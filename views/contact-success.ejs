@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <%- include ('partial/nav.ejs') %>
+        <h1>Welcome to the contact success page </h1>
+        <P>you can email or mesage in this phone number</P>
+
+        <h1>
+            <strong id="uid">
+                <%= data.fname%>
+                    <%= data.lname%>
+            </strong> <br> T
+            hank you for contact us <br>
+            and here is your E-Mail Id is:-
+            <strong id="uid">
+                <%= data.email%>
+            </strong>
+        </h1>
+
+        </form>
+</body>
+
+</html>

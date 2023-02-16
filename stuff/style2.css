@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(188, 235, 135);
+    padding: 50px;
+}
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+p{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: rgb(13, 0, 255);
+    text-align: center;
+    list-style-type: none;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:transparent;
+  }
+  
+  li {
+    display: inline;
+  }
+#first {
+    list-style-type:none;
+    overflow: hidden;
+    background-color:transparent;
+    margin: 0 70vh;
+  }
+  
+  
+  #second{
+    display: block;
+    font-size: 20px;
+    color: blue;
+    text-transform: capitalize;
+  }
+  
+  li a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color:green;
+  }

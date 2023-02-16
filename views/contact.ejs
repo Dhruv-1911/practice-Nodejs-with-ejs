@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/assets/style1.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <%- include ('partial/nav.ejs') %>
+        <h1>Welcome to the contact page </h1>
+        <P>you can email or mesage in this phone number</P>
+     
+
+        <h4><%= qs.dept %></h4>
+        <P><%= qs.person %></P>
+
+        <!-- <form method="post" action="/contact">
+            <label for="person">Your Name </label>
+            <input type="text" name="person"  />
+            <label for="dept">Write Your Department </label>
+            <input type="text" name="dept"  />
+            <label for="email">Write Down your E-mail </label>
+            <input type="text" name="email" />
+            <input type="submit" />
+        </form> -->
+<p></p>
+        
+            <form id="form" method="post" action="/contact">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Your name.." value='<%= qs.fname%>'/>
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name.." value="<%= qs.lname %>">
+
+              <label for="email">E-mail </label>
+              <input type="text" id="email" name="email" placeholder="Enter Your E-mail " value="<%= qs.email %>">
+          
+              <input type="submit" id="submit" value="Submit">
+            </form>
+          
+    </body>
+</html>
