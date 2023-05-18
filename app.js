@@ -245,7 +245,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: true })//post method
 app.set('view engine', 'ejs');
 app.use('/assets', express.static('stuff'));//Middlewares and static file 
 
-app.get(['/','/home'], (req, res) => {
+app.get(['/', '/home'], (req, res) => {
     res.render('home');
     // res.sendFile(__dirname + "/index.html");
     //   res.send('this is home page');
@@ -253,18 +253,17 @@ app.get(['/','/home'], (req, res) => {
 app.get('/contact', (req, res) => {
     console.log(req.query);
     res.render('contact', { qs: req.query });
-    // res.sendFile(__dirname + "/contact.html");
+    res.sendFile(__dirname + "/contact.html");
     // res.send('this is contact page');
 });
 
-app.get('/about',(req,res)=>{
+app.get('/about', (req, res) => {
     res.render('about');
 })
-
-
 app.post('/contact', urlencodedParser, (req, res) => {
     console.log("req.body", req);
     res.render('contact-success', { data: req.body });
+    // res.send('this is from post');
 });
 
 app.get('/profile/:name', (req, res) => {
@@ -273,4 +272,11 @@ app.get('/profile/:name', (req, res) => {
     res.render('profile', { person: req.params.name, data: data });
 });
 
-app.listen(8000);
+app.listen(8000,()=>{
+    console.log("listen...8000 port");
+});
+
+
+
+
+
